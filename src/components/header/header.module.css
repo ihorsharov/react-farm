@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 20px 50px;
+  font-size: 28px;
+  font-weight: bold;
+
+  background-color: #8b4513;
+  align-items: center;
+}
+
+.money {
+  color: #4bbe41;
+  background-color: #cd853f;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+
+.logo {
+  border-radius: 50%;
+  border: 2px solid rgb(129, 129, 129);
+  background-color: wheat;
+  padding: 4px;
+  width: 50px;
+  height: 50px;
+}

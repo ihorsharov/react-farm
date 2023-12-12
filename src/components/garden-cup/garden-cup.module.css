@@ -1,0 +1,10 @@
+.plantation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.plantation img {
+  width: 80px;
+  transform: rotate(-2deg);
+}

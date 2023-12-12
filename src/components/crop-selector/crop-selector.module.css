@@ -1,0 +1,42 @@
+.modal {
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+  width: 200px;
+  height: 100%;
+  top: 0;
+}
+
+.menu {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  position: absolute;
+  transform-origin: 100px;
+  left: 0;
+  top: 200px;
+  transition: transform calc(0.2s * (var(--i) + 1)) ease-in-out;
+}
+
+.active {
+  transform: rotate(calc(-360deg / 8 * var(--i) - 228deg));
+}
+
+.button img {
+  max-width: 50px;
+  max-height: 50px;
+  --rotation-angle: calc(360deg / 8 * var(--i) + 228deg);
+  transform: rotate(var(--rotation-angle));
+
+  transition: transform 0.1s linear;
+}
+
+.button:hover img {
+  transform: scale(1.2) rotate(var(--rotation-angle));
+}

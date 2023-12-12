@@ -1,0 +1,125 @@
+body {
+  overflow: hidden;
+}
+
+.pie {
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 400px;
+  right: -200px;
+  position: absolute;
+  bottom: -200px;
+  width: 400px;
+  transform: translateX(200px) translateY(200px);
+  transition: transform 300ms;
+}
+.pieColor:hover {
+  opacity: 0.85;
+}
+.pieColor:active {
+  opacity: 0.7;
+}
+.pie1 {
+  clip-path: polygon(200px 200px, 0 70px, 0px 450px);
+  transition-delay: 40ms;
+}
+.pie2 {
+  clip-path: polygon(200px 200px, 0 85px, 0px -163px);
+  transition-delay: 60ms;
+}
+.pie3 {
+  clip-path: polygon(200px 200px, 450px 0px, 90px 0px);
+  transition-delay: 80ms;
+}
+.pieColor {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.pieColor1 {
+  background: linear-gradient(135deg, #f12711, #f5af19);
+  clip-path: polygon(200px 200px, 0 70px, 0px 450px);
+}
+.pieColor2 {
+  background: linear-gradient(135deg, #444, #7e84f9);
+  clip-path: polygon(200px 200px, 0 85px, 0px -163px);
+}
+.pieColor3 {
+  background: linear-gradient(135deg, #444, #b7e13f);
+  clip-path: polygon(200px 200px, 450px 0px, 90px 0px);
+}
+.card {
+  right: 325px;
+  position: absolute;
+  bottom: 190px;
+  width: 47px;
+}
+.discount {
+  right: 283px;
+  position: absolute;
+  bottom: 261px;
+  width: 46px;
+}
+.cart {
+  right: 218px;
+  position: absolute;
+  bottom: 295px;
+  width: 46px;
+}
+.menu {
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 4px 5px rgba(0, 0, 0, 0.2);
+  height: 200px;
+  right: -100px;
+  position: absolute;
+  bottom: -100px;
+  width: 200px;
+}
+.hamburger {
+  cursor: pointer;
+  height: 46px;
+  left: 23%;
+  position: relative;
+  top: 21%;
+  width: 46px;
+}
+
+.hamburger path {
+  transition: transform 200ms;
+}
+.hamburger path:nth-child(1) {
+  transform-origin: 25% 29%;
+}
+.hamburger path:nth-child(2) {
+  transform-origin: 50% 50%;
+}
+.hamburger path:nth-child(3) {
+  transform-origin: 75% 72%;
+}
+.hamburger path:nth-child(4) {
+  transform-origin: 75% 29%;
+}
+.hamburger path:nth-child(5) {
+  transform-origin: 25% 72%;
+}
+.active .pie {
+  transform: translateX(0) translateY(0);
+}
+.active .hamburger path:nth-child(1) {
+  transform: rotate(45deg);
+}
+.active .hamburger path:nth-child(2) {
+  transform: scaleX(0);
+}
+.active .hamburger path:nth-child(3) {
+  transform: rotate(45deg);
+}
+.active .hamburger path:nth-child(4) {
+  transform: rotate(-45deg);
+}
+.active .hamburger path:nth-child(5) {
+  transform: rotate(-45deg);
+}

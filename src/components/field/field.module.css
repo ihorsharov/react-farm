@@ -1,0 +1,23 @@
+.container {
+  position: relative;
+  user-select: none;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.1);
+}
+
+.field {
+  position: relative;
+  width: 200px;
+  height: 200px;
+
+  border: 1px solid black;
+
+  display: grid;
+  place-items: center;
+}
